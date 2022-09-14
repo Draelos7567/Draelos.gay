@@ -4,7 +4,11 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
        <link rel="stylesheet" href="GAYCSS.CSS"></link>
 
+       
         <style>
+             #image {
+            display: none;
+        }
             .A {
                 border: 5px orange;
                 background-color:lightskyblue;
@@ -19,19 +23,29 @@
     <body>
        <h1>Click button for ref sheet</h1>
       
-       <button id="myBtn" type="button">I am a button</button>
-   <script>
-        const myBtn = document.getElementById("myBtn");
-
-        constole.log("myBtn");
-
-        myBtn.addEventListener("click", function(e) {
-            console.log("The button was clicked");
-
-        }) ;
-
-    
-   </script> 
+     <!-- Add id to image -->
+     <img id="image" src=
+     "C:\Users\legen\Documents\draelos.gay\pictures\draelos_ref_sheet_nsfw.png" width="866" height="606"
+                 alt="GFG image" />
+         </div>
+      
+         <button type="button"
+             onclick="show()" id="btnID">
+             Show Image
+         </button>
+      
+         <script>
+             function show() {
+      
+                 /* Access image by id and change
+                 the display property to block*/
+                 document.getElementById('image')
+                         .style.display = "block";
+      
+                 document.getElementById('btnID')
+                         .style.display = "none";
+             }
+         </script>
 
        
         
