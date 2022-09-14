@@ -7,38 +7,41 @@
        
         <style>
              #image {
-            display: none;
-        }
-            .A {
-                border: 5px orange;
-                background-color:lightskyblue;
-                text-align: center;
+            display: none;}
+            .myDiv{
+                border: 5px;
+                background-color:rgb(59,59,59);
+                text-align:center;
+                font-family: 'Courier New', Courier, monospace;
 
             }
+            .div2{
+                border: 70px;
 
+            }
         </style>
 
     </head>
 
     <body>
+        <div class="myDiv">
        <h1>Click button for ref sheet</h1>
       
-     <!-- Add id to image -->
+     
      <img id="image" src=
      "https://media.discordapp.net/attachments/960063660791832579/989610460405960754/draelos_ref_sheet_nsfw.png?width=906&height=634" width="866" height="606"
-                 alt="GFG image" />
-         </div>
+                 alt="DraelosPic" />
+         
       
          <button type="button"
              onclick="show()" id="btnID">
-             Show Image
+             Ref Sheet
          </button>
       
          <script>
              function show() {
       
-                 /* Access image by id and change
-                 the display property to block*/
+                 
                  document.getElementById('image')
                          .style.display = "block";
       
@@ -46,10 +49,4 @@
                          .style.display = "none";
              }
          </script>
-
-       
-        
-        
-    </body>
-
-</html>
+</div>
